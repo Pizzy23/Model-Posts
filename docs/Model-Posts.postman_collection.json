@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "01b575ba-5068-4156-a9a5-7bfb8c990fcf",
+		"name": "Model-Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17643886"
+	},
+	"item": [
+		{
+			"name": "Post Base",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "Cleiton",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "123456",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "e-mail",
+						"value": "aa@mail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "cellphone",
+						"value": "1123452345",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Beans1\",\r\n    \"email\":\"aabb7@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Base/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Base",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post PostText",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "Cleiton",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "123456",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "e-mail",
+						"value": "aa@mail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "cellphone",
+						"value": "1123452345",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\":\"Post que o usuario faria, assim para entender como funcionaria\",\r\n    \"email\":\"aabb4@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Base/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Base",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get OnePost",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aabb4@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Base/One",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Base",
+						"One"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get AllPost",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aabb4@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/Base/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Base",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
